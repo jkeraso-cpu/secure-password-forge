@@ -1,0 +1,38 @@
+/**
+ * Embedded, neutral English word list used for passphrase generation.
+ * Kept local on purpose — no network requests are made to build a passphrase.
+ */
+export const WORD_LIST: readonly string[] = [
+  "harbor", "satellite", "maple", "velvet", "lantern", "granite", "compass", "meadow",
+  "orbit", "cobalt", "timber", "cinnamon", "glacier", "prairie", "willow", "marble",
+  "cedar", "ember", "cavern", "juniper", "quartz", "summit", "thistle", "vector",
+  "walnut", "zephyr", "anchor", "bramble", "canyon", "dolphin", "eclipse", "falcon",
+  "garnet", "hollow", "indigo", "jasmine", "kettle", "lagoon", "mosaic", "nectar",
+  "obsidian", "pepper", "quiver", "ripple", "saffron", "tundra", "umber", "violet",
+  "wander", "yonder", "almond", "basalt", "citrus", "dapple", "eagle", "fossil",
+  "gallery", "hazel", "island", "jigsaw", "kayak", "ledger", "mantle", "nimbus",
+  "opal", "pigment", "quarry", "rooster", "sandal", "tunnel", "upland", "vessel",
+  "wicker", "yarrow", "azure", "bison", "cobble", "driftwood", "elder", "flannel",
+  "gravel", "harvest", "ivory", "jetty", "kernel", "linen", "marsh", "noble",
+  "onyx", "parlor", "quilt", "rustic", "sable", "trellis", "umbra", "valley",
+  "wharf", "yeoman", "acorn", "beacon", "cascade", "domino", "engine", "feather",
+  "gable", "hamlet", "ingot", "jackal", "kiosk", "lattice", "mallet", "nutmeg",
+  "orchard", "pewter", "quintet", "rafter", "silo", "tassel", "unison", "vellum",
+  "walrus", "yield", "amber", "bracket", "crescent", "dune", "estuary", "fennel",
+  "glimmer", "hearth", "iris", "jumble", "kindle", "lucid", "mirth", "nomad",
+  "oyster", "plateau", "quorum", "relic", "sonnet", "tempo", "upward", "vista",
+  "whistle", "yogurt", "arbor", "bellow", "chisel", "delta", "echo", "fathom",
+  "gusto", "helix", "impulse", "jovial", "keystone", "lumen", "matrix", "nova",
+  "outpost", "pinnacle", "quasar", "radiant", "spindle", "tapestry", "uplift", "vantage",
+  "wisdom", "zenith", "anvil", "bridge", "cipher", "dynamo", "emblem", "forge",
+  "gambit", "hinge", "ingress", "jolt", "kilter", "lever", "module", "notch",
+  "octave", "pivot", "quench", "rudder", "shutter", "torque", "utility", "valve",
+  "wedge", "yield", "ballad", "cobra", "dragon", "egret", "ferret", "gecko",
+  "heron", "iguana", "jaguar", "koala", "lemur", "marten", "narwhal", "otter",
+  "puffin", "quail", "raven", "salmon", "toucan", "urchin", "viper", "walnut",
+  "yak", "zebra", "bakery", "cottage", "dockyard", "embassy", "foundry", "gazebo",
+  "harbour", "inlet", "junction", "kitchen", "library", "market", "nursery", "observatory",
+  "pantry", "quayside", "refuge", "station", "terrace", "university", "village", "workshop",
+  "yardarm", "atlas", "bulletin", "catalog", "diagram", "essay", "folio", "glossary",
+  "handbook", "index", "journal", "keynote", "lexicon", "manual", "notebook", "outline",
+] as const;
