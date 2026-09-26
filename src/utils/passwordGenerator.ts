@@ -1,8 +1,4 @@
-import {
-  AMBIGUOUS_CHARACTERS,
-  CATEGORY_SETS,
-  CONFUSING_SYMBOLS,
-} from "@/constants/characterSets";
+import { AMBIGUOUS_CHARACTERS, CATEGORY_SETS, CONFUSING_SYMBOLS } from "@/constants/characterSets";
 import type { CharacterCategory, GenerationResult, PasswordOptions } from "@/types/generator";
 import { randomCharacter, shuffleSecurely } from "./secureRandom";
 

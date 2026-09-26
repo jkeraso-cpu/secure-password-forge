@@ -20,9 +20,12 @@ export function PasswordOutput({ value, error, onRegenerate }: PasswordOutputPro
     return () => clearTimeout(id);
   }, [value]);
 
-  useEffect(() => () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-  }, []);
+  useEffect(
+    () => () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    },
+    [],
+  );
 
   const handleCopy = async () => {
     if (!value) return;
@@ -46,11 +49,7 @@ export function PasswordOutput({ value, error, onRegenerate }: PasswordOutputPro
           error ? "border-destructive/60" : ""
         }`}
       >
-        <output
-          aria-label="Generated password"
-          className="w-full overflow-x-auto"
-          tabIndex={0}
-        >
+        <output aria-label="Generated password" className="w-full overflow-x-auto" tabIndex={0}>
           {error ? (
             <span className="text-sm text-destructive">{error}</span>
           ) : (

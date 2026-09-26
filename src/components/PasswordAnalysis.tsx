@@ -7,7 +7,7 @@ interface PasswordAnalysisProps {
   poolLabel: string;
   entropyBits: number;
   modeLabel: string;
-  note?: string;
+  note?: string | undefined;
 }
 
 export function PasswordAnalysis({

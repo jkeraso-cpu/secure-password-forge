@@ -68,7 +68,7 @@ export function AdvancedOptions({ options, onChange }: AdvancedOptionsProps) {
           <ToggleRow
             id="adv-symbols"
             label="Avoid confusing symbols"
-            tip="Skips symbols that are awkward to type or read, such as | ` ' \" and \\."
+            tip={"Skips symbols that are awkward to type or read, such as | ` ' \" and \\."}
             checked={options.excludeConfusingSymbols}
             onChange={(checked) => onChange({ excludeConfusingSymbols: checked })}
           />
@@ -90,7 +90,7 @@ export function AdvancedOptions({ options, onChange }: AdvancedOptionsProps) {
               spellCheck={false}
               value={options.customExclusions}
               onChange={(event) => onChange({ customExclusions: event.target.value })}
-              placeholder="Characters to exclude, e.g. {}[]/\"
+              placeholder={"Characters to exclude, e.g. {}[]/\\"}
               className="mt-2 h-10 w-full rounded-lg border border-input bg-card px-3 font-mono text-sm"
             />
             <p className="mt-1.5 text-xs text-muted-foreground">

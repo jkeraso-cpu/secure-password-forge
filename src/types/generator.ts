@@ -28,8 +28,7 @@ export interface PinOptions {
 }
 
 export type GenerationResult =
-  | { ok: true; value: string; poolSize: number }
-  | { ok: false; error: string };
+  { ok: true; value: string; poolSize: number } | { ok: false; error: string };
 
 export interface StrengthRating {
   label: "Very weak" | "Weak" | "Fair" | "Strong" | "Very strong";

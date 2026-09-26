@@ -25,7 +25,10 @@ const TIPS = [
 
 export function SecurityTips() {
   return (
-    <section id="security-tips" className="mx-auto w-full max-w-6xl scroll-mt-20 px-4 pt-14 sm:px-6">
+    <section
+      id="security-tips"
+      className="mx-auto w-full max-w-6xl scroll-mt-20 px-4 pt-14 sm:px-6"
+    >
       <h2 className="text-lg font-semibold tracking-tight">Better password habits</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {TIPS.map(({ icon: Icon, title, text }) => (

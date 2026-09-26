@@ -11,8 +11,8 @@ export function PrivacyNotice() {
         <div>
           <h2 className="text-sm font-semibold">Private by design</h2>
           <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-            PasswordForge generates passwords entirely on your device using the browser&apos;s secure
-            random-number generator. Generated passwords are not stored or transmitted.
+            PasswordForge generates passwords entirely on your device using the browser&apos;s
+            secure random-number generator. Generated passwords are not stored or transmitted.
           </p>
           <button
             type="button"

@@ -22,11 +22,7 @@ import {
   calculatePoolSize,
   generatePassword,
 } from "@/utils/passwordGenerator";
-import {
-  UNIQUE_WORDS,
-  generatePassphrase,
-  passphraseEntropy,
-} from "@/utils/passphraseGenerator";
+import { UNIQUE_WORDS, generatePassphrase, passphraseEntropy } from "@/utils/passphraseGenerator";
 import { generatePin } from "@/utils/pinGenerator";
 
 const MODE_STORAGE_KEY = "passwordforge:mode";
@@ -72,9 +68,7 @@ function isMode(value: unknown): value is GeneratorMode {
 
 export function GeneratorCard() {
   const [mode, setMode] = useState<GeneratorMode>("balanced");
-  const [passwordOptions, setPasswordOptions] = useState<PasswordOptions>(
-    DEFAULT_PASSWORD_OPTIONS,
-  );
+  const [passwordOptions, setPasswordOptions] = useState<PasswordOptions>(DEFAULT_PASSWORD_OPTIONS);
   const [passphraseOptions, setPassphraseOptions] = useState<PassphraseOptions>(
     DEFAULT_PASSPHRASE_OPTIONS,
   );
@@ -167,19 +161,17 @@ export function GeneratorCard() {
                   min={MIN_LENGTH}
                   max={MAX_LENGTH}
                   presets={[12, 16, 20, 32, 64]}
-                  onChange={(value) => setPasswordOptions((current) => ({ ...current, length: value }))}
+                  onChange={(value) =>
+                    setPasswordOptions((current) => ({ ...current, length: value }))
+                  }
                 />
                 <CharacterOptions
                   options={passwordOptions}
-                  onChange={(patch) =>
-                    setPasswordOptions((current) => ({ ...current, ...patch }))
-                  }
+                  onChange={(patch) => setPasswordOptions((current) => ({ ...current, ...patch }))}
                 />
                 <AdvancedOptions
                   options={passwordOptions}
-                  onChange={(patch) =>
-                    setPasswordOptions((current) => ({ ...current, ...patch }))
-                  }
+                  onChange={(patch) => setPasswordOptions((current) => ({ ...current, ...patch }))}
                 />
               </>
             ) : null}
