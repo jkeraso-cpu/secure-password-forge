@@ -19,10 +19,7 @@ export function LogoMark({ className }: LogoProps) {
         strokeWidth="2"
         strokeLinejoin="round"
       />
-      <path
-        d="M17.6 9.5 11.8 17.4h4.1l-1.5 5.6 5.8-8.2h-4.1l1.5-5.3Z"
-        fill="currentColor"
-      />
+      <path d="M17.6 9.5 11.8 17.4h4.1l-1.5 5.6 5.8-8.2h-4.1l1.5-5.3Z" fill="currentColor" />
     </svg>
   );
 }
