@@ -68,7 +68,7 @@ export function AdvancedOptions({ options, onChange }: AdvancedOptionsProps) {
           <ToggleRow
             id="adv-symbols"
             label="Avoid confusing symbols"
-            tip="Skips symbols that are awkward to type or read, such as | ` ' \" and \\."
+            tip={"Skips symbols that are awkward to type or read, such as | ` ' \" and \\."}
             checked={options.excludeConfusingSymbols}
             onChange={(checked) => onChange({ excludeConfusingSymbols: checked })}
           />
